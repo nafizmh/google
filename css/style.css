@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    /* background-color: black; */
+    font-family: arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    /* max-width: fit-content; */
+    margin: auto;
+    max-width: 1280px;
+}
+
+.container-fulid {
+    width: 100%;
+    /* max-width: fit-content; */
+    margin: auto;
+}
+
+/***************************************
+*                                      *
+*                header                *
+*                                      *
+***************************************/
+.inner-header,
+.right-item {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+header {
+    height: 56px;
+}
+
+.inner-header .right-item span {
+    padding: 0px 10px;
+}
+
+.inner-header .right-item span a {
+    color: rgba(0, 0, 0, 0.747);
+    font-weight: normal;
+}
+
+.inner-header .right-item span a:hover {
+    border-bottom: 1px solid #000;
+    transition: 0.4s;
+}
+
+.inner-header .right-item a img {
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+/***************************************
+*                                      *
+*                 main                 *
+*                                      *
+***************************************/
+.main-contant {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.search-box img {
+    width: 22px;
+    height: 22px;
+    color: #9aa0a6;
+}
+
+.search-box {
+    border: 1px solid #00000040;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    border-radius: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.srchicon {
+    width: 8%;
+}
+
+.mic-pic {
+    width: 15%;
+}
+
+.inputbox {
+    width: 75%;
+}
+
+.inputbox input {
+    padding: 10px 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.btn-box button,
+.btn-box button a {
+    width: 135px;
+    height: 38px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.781);
+    margin: 0px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn-box {
+    margin: 1rem 0rem;
+}
+
+.lang span span {
+    color: blue;
+    cursor: pointer;
+}
+
+.aa {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+@media only screen and (max-width:428px) {
+    .srchicon {
+        display: none;
+    }
+
+    .mic-pic {
+        display: none;
+    }
+
+    .search-box {
+        width: 90%;
+        padding: 5px 20px;
+    }
+}
